@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/79574abb4f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>SmartFin</title>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function showDropdown() {
+          document.getElementById("drop").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropButton')) {
+            var dropdowns = document.getElementsByClassName("dropDownContent");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        
+</head>
+
+<body>
+    <div class="body">
+        <div class="menu">
+            <div class="socialMedia">
+
+                <a href="#"><i class='fab fa-facebook-f'></i></a>
+                <a href="#"><i class='fab fa-instagram'></i></a>
+                <a href="#"><i class='fab fa-twitter'></i></a>
+            </div>
+
+            <div class="kontakt">
+                <a href="#">Nr. kontakti
+                    <i class='fas fa-phone-alt' style="color:white;"></i>
+                </a>
+                <a href="#">Llogaria ime
+                    <i class='fas fa-user-alt' style="color:white;"></i>
+
+                </a>
+            </div>
+        </div>
+        <div class="background">
+            <div class="bg_cont">
+                <img class="bg" src="bg2.jpg">
+                <p>I lehtë, i shpejtë, i zgjuar</p>
+                <div class="container-box">
+                    <h1>Smartfin, partneri strategjik i biznesit tuaj</h1>
+                    <p>Dëshironi të :</p>
+                    <div class="todoLinks">
+                        <a href="#">Krijoni Biznes</a>
+                        <a href="#">Krijoni Shoqate</a>
+                        <a href="#">Menaxhoni biznes</a>
+                        <a href="#">Deklaroni pasuri</a>
+                        <a href="#" id="konsultoheni">Konsultoheni</a>
+                    </div>
+                    <a class="more" href="#">Më Shumë</a>
+                </div>
+            </div>
+            <div class="container">
+
+                <img src="logo.png" class="logo">
+
+                <div class="dropdown">
+                    <button class="dropbtn">Krijo biznes
+                        <a href="#"><i class='fas fa-caret-square-down'></i></a>
+                    </button>
+                    <div class="dropcontent">
+                        <a href="#">opsioni 1</a>
+                        <a href="#">opsioni 2</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Menaxho biznesin
+                        <a href="#"><i class='fas fa-caret-square-down'></i></a>
+                    </button>
+                    <div class="dropcontent">
+                        <a href="#">opsioni 1</a>
+                        <a href="#">opsioni 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dokumenta tip
+                        <a href="#"><i class='fas fa-caret-square-down'></i></a>
+                    </button>
+                    <div class="dropcontent">
+                        <a href="#">opsioni 1</a>
+                        <a href="#">opsioni 2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Procedura
+                        <a href="#"><i class='fas fa-caret-square-down'></i></a>
+                    </button>
+                    <div class="dropcontent">
+                        <a href="#">opsioni 1</a>
+                        <a href="#">opsioni 2</a>
+                    </div>
+                </div>
+
+                <a href="#"><i class="fa fa-search vis"></i></a>
+
+                
+         <div class="dropdownShow">
+           
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bars"></i> MENU
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Krijo biznes</a>
+              <a class="dropdown-item" href="#">Menaxho biznesin</a>
+              <a class="dropdown-item" href="#">Dokumenta tip</a>
+              <a class="dropdown-item" href="#">Procedura</a>
+            </div>
+          </div>
+
+       
+
+            </div>
+
+        </div>
+        <div class="container2">
+            <p class="p1">Smartfin, partneri ligjor i më shumë se 10,000 sipërmarrësve</p>
+            <div class="rating">
+                <span class="vleresimi">Vlerësimi juaj!</span>
+                <form id="user-rating-form">
+                    <span class="user-rating">
+
+                        <input type="radio" name="rating" value="5"><span class="star"></span>
+
+                        <input type="radio" name="rating" value="4"><span class="star"></span>
+
+                        <input type="radio" name="rating" value="3"><span class="star"></span>
+
+                        <input type="radio" name="rating" value="2"><span class="star"></span>
+
+                        <input type="radio" name="rating" value="1"><span class="star"></span>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div class="suporti">
+
+            <div class="sponsors">
+                <p>Na Mbështesin</p>
+                <img src="ss_logo.gif">
+                <img src="google_logo.png">
+                <img src="avokatia.png">
+            </div>
+        </div>
+        <div class="funksioni">
+            <p id="p1">Krijoni dhe menaxhoni biznesin tuaj me Smartfin!</p>
+            <p id="p2">
+                Partner ligjor i biznesit tënd.
+            </p>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/PrUxWZiQfy4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+        <div class="liste-funks">
+            <h1>Si funksionon?</h1>
+            <i class='far fa-file-alt'></i>
+            <div class="veprimet">ZGJIDHNI STRUKTURËN E DUHUR LIGJORE
+                <p>Përdorni mjetet tona për t’ju ndihmuar të gjeni strukturën e duhur ligjore për nevojat tuaja</p>
+            </div>
+            <i class='far fa-copy'></i>
+            <div class="veprimet">KRIJO DOKUMENTIN TËND
+                <p>Përgjigju pyetjeve të thjeshta. Smartfin krijon një dokument të bërë me porosi</p>
+            </div>
+            <i class='fas fa-balance-scale'></i>
+
+            <div class="veprimet">
+                MENAXHONI FOMALITETET TUAJA
+                <p>Prefekturat, NIPT, etj: Smartfin kujdeset për gjithçka</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="cont">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="k1.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>ALDO MUÇAJ - KONSULENT <br>UNË BESOJ SE SMARTFIN DUHET TË JETË PARTNERI LIGJOR I KOMPANISË TUAJ
+                        </h3>
+                        <p>Përvoja e shkëlqyer me Smartfin. Ato janë efikase, të shpejtë dhe i përgjigjen të gjitha
+                            pyetjeve tona.Ata gjithashtu kujdesen për veprimtarinë bankare dhe të kontabilitetit, jane
+                            mbrojtës në kohë reale.Në më pak se 48 orë u krijua llogaria ime. »</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="k2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>GENTI ALLARAJ - KONSULENT <br>UNË BESOJ SE SMARTFIN DUHET TË JETË PARTNERI LIGJOR I KOMPANISË TUAJ
+                        </h3>
+                        <p>Përvoja e shkëlqyer me Smartfin. Ato janë efikase, të shpejtë dhe i përgjigjen të gjitha
+                            pyetjeve tona.Ata gjithashtu kujdesen për veprimtarinë bankare dhe të kontabilitetit, jane
+                            mbrojtës në kohë reale.Në më pak se 48 orë u krijua llogaria ime. »</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="k3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h3>ANILA HYSO - KONSULENTE <br>UNË BESOJ SE SMARTFIN DUHET TË JETË PARTNERI LIGJOR I KOMPANISË TUAJ
+                        </h3>
+                        <p>Përvoja e shkëlqyer me Smartfin. Ato janë efikase, të shpejtë dhe i përgjigjen të gjitha
+                            pyetjeve tona.Ata gjithashtu kujdesen për veprimtarinë bankare dhe të kontabilitetit, jane
+                            mbrojtës në kohë reale.Në më pak se 48 orë u krijua llogaria ime. »</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <div class="sherbimet">
+        <p>Një shërbim i projektuar nga sipërmarrësit, për sipërmarrësit</p>
+        <div class="vlerat" style="border:none">
+            <i class='far fa-clock'></i><br>
+            <span>Thjeshtë dhe i shpejtë</span>
+            <p>Krijoni dokumentet tuaja dhe plotësoni formalitetet tuaja në më pak se 10 minuta</p>
+            <a href="#">Mësoni më shumë</a>
+        </div>
+        <div class="vlerat">
+            <i class='fas fa-tag'></i><br>
+            <span>Çmim i pa-konkurueshëm</span>
+            <p>Kurseni deri në 80% në tarifat tuaja ligjore</p>
+            <a href="#">Mësoni më shumë</a>
+        </div>
+        <div class="vlerat">
+            <i class='far fa-file-archive'></i><br>
+            <span>Dokumente të besueshme</span>
+            <p>Programi ynë krijon dokumente të besueshme të përshtatura për biznesin tuaj</p>
+            <a href="#">Mësoni më shumë</a>
+        </div>
+    </div>
+    <div class="ndihma">
+        <div class="eks">
+            <img src="f1.png"><br>
+            <h2>Ekspertët tanë janë këtu për t'ju ndihmuar</h2>
+            <p>Ekspertët: Kontaktoni ekspertët tanë tani me telefon ( +355 69 123 456 7) ose me chat</p>
+        </div>
+        <div class="eks" id="eksp2">
+            <img src="f1.png" id="eks2"><br>
+            <h2>Bisedoni me një profesionist</h2>
+            <p>Nëse është e nevojshme, avokatët tanë, noterët dhe partnerët e kontabilistëve të licencuar janë në
+                dispozicionin tuaj për t'ju këshilluar. Na telefononi për t'u lidhur.</p>
+        </div>
+
+    </div>
+    <div class="tel">
+        <p>+355 69 475 632 1</p>
+    </div>
+
+    <div class="support2">
+        <p>Ata flasin për ne </p>
+        <img src="aitic.png">
+        <img src="mag.png">
+    </div>
+
+    <div class="container3">
+        <p>Dëshironi të :</p>
+        <div class="todoLinks">
+            <a href="#">Krijoni Biznes</a>
+            <a href="#">Krijoni Shoqate</a>
+            <a href="#">Menaxhoni biznes</a>
+            <a href="#">Deklaroni pasuri</a>
+            <a href="#" id="konsultohuni">Konsultoheni</a>
+        </div>
+    </div>
+
+    <footer>
+        <form id="footer-form">
+            <i class="fa fa-envelope"></i>
+            <p>Regjistrohu tani për të marrë informacionin tonë të fundit
+            </p>
+            <input type="email" placeholder="Email adresa juaj" required enabled>
+            <input type="submit" value="RREGJISTROHU" enabled>
+        </form>
+
+        <div class="footer_cont">
+            <div class="row align-items-start">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Krijo biznes</h4> 
+                    <p>Bëhuni vetë-sipërmarrës<br> Krijimi i një SASU<br> Krijimi i një SAS<br> Krijimi i një SARL
+                        <br>Krijimi i një EURL
+                        <br> Krijimi i një SCI
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Menaxho biznesin</h4>
+                    <p>
+                        Transferimi i zyrës së regjistruar<br> Ndryshimi i emrit<br> Ndryshimi i Presidentit (SAS,
+                        SASU)<br> Ndryshimi i menaxherit (SARL, EURL, SCI)<br> Ndryshimi i objektit social<br> Miratimi
+                        i llogarive<br> Likuidimi i shpërbërjes<br> Mbledhja e faturës<br> Regjistrimi i markës
+                        tregtare<br>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Fletët më të mira praktike</h4>
+                    <p>
+                        Hapat e fillimit të një biznesi<br> Si të krijoni një SASU?<br> Si të krijoni një SAS?<br> Si të
+                        krijoni një SARL?<br> Si të krijoni një EURL?<br> Si të bëheni vetë-sipërmarrës?<br> Si të
+                        depozitoni një markë tregtare?<br> Si të
+                        sigurohet rimarrja e një fature?<br>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <h4>Shërbimet tona</h4>
+                    <p>
+                        Asistencë ligjore<br> Menaxho llogarinë tënde<br> Intervistë me një Ekspert<br> Shërbimi i
+                        pajtueshmërisë<br> Monitorimi i markës<br> Simulimi i detyrimeve sociale<br> Zgjidhni formën
+                        tuaj ligjore<br> Modeli i planit të biznesit<br> Modeli i statusit SASU<br> Modeli i statusit
+                        SAS<br> Statusi i modelit SARL<br> Modeli i statusit EURL<br> Udhëzues për krijimin e
+                        bizneseve<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col-md-6 col-xs-12">
+                    <h4>Kontakt</h4>
+                    <p>
+                        Telefoni : +355 69 100 000 0<br> Email : info@smartfin.com<br> 1001 Tirana, Albania<br>
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h4>Na ndiqni në:</h4>
+                    <div class="social-net">
+
+                        <a href="#"><i class='fab fa-facebook-f'></i></a>
+                        <a href="#"><i class='fab fa-instagram'></i></a>
+                        <a href="#"><i class='fab fa-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="subfooter">
+        <i class='fas fa-award'></i>
+        <br>
+        <p>Shkëmbimet tuaja me Smartfin mbrohen me çertifikatën tonë të respektimit të jetës private . Smartfin është
+            zhvilluar në Tiranë/Albania. Në përputhje me rregulloret në fuqi, Smartfin lejon përdoruesit të krijojnë
+            aktet e tyre ligjore dhe ofrojnë një shërbim kontakti me profesionistët ligjorë. Përdorimi i shërbimit i nënshtrohet kushteve tona të
+            përgjithshme . Për më shumë informacion, konsultohuni me njoftimet tona ligjore . Na kontaktoni:
+            support@smartfin.al ose, telefon: +355 69 123 456 7</p>
+    </div>
+
+    <body>
+
+</html>
